@@ -28,7 +28,7 @@
             padding: 10px;
             background-color: #0F1111;
             display: grid;
-            grid-template-columns: 0.8fr 1.1fr 3.4fr 0.7fr 1fr .8fr 0.8fr;
+            grid-template-columns: 1.2fr 1.2fr 5fr 0.7fr 1fr .8fr 0.5fr;
         }
 
         nav .logoDiv{
@@ -43,11 +43,6 @@
             padding:4px;
             margin-top:5px;
             font-size: 8px;
-        }
-        .menuDiv :hover{
-            border: 1px solid #b8b8b8;
-            /* text-align: center; */
-            /* padding: auto; */
         }
         .logoDiv span{
             line-height: 22px;
@@ -161,6 +156,61 @@
         .quicklinks .quicklinkBox ul li{ 
             line-height: 25px;
         }
+        .searchDiv{
+            padding: 0px 0px 0px 10px;   
+            font-size: 13px;
+            display: grid;
+            grid-template-columns: 0.15fr 1fr 0.1fr;
+        }
+        .searchDiv .dropdown{
+            /* line-height: 30px; */
+            text-align: center;
+        }
+        .searchDiv .dropdown select{
+            height: 40px;
+            width: 100%;
+            font-size: 13px;
+            padding-left: 5px;
+            background-color: #f3f3f3;
+            border-radius: 5px 0px 0px 5px;
+        }
+        .searchBox input{
+            height: 26px;
+            width: 100%;
+            padding: 5px;
+            font-size: 13px;
+        }
+        .searchDiv .searchIcon{
+            height: 38px;
+            width: 100%;
+            margin-top: 1px;
+            background-color:#febd69;
+            border-radius: 0px 5px 5px 0px;
+        }
+        .langBox{
+            text-align: center;
+            margin-top: 15px;
+        }
+        .langBox select{
+            background-color: transparent;
+            color: #f3f3f3;
+            border: none;
+            font-weight: bold;
+        }
+        .menubar{
+            line-height: 40px;
+            font-size: 14px;
+        }
+        .menubar ul{
+            list-style-type: none;
+        }
+        .menubar ul li{
+            display: inline;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        
+        
     </style>
 </head>
 <body>
@@ -178,13 +228,51 @@
                         <h4>Select Your address</h4>
                     </div>
                 </div>
-                <div class="menuDiv">3</div>
-                <div class="menuDiv">4</div>
-                <div class="menuDiv">5</div>
-                <div class="menuDiv">6</div>
-                <div class="menuDiv">7</div>
+                <div class="menuDiv searchDiv">
+                    <div class="dropdown">
+                        <select name="" id="">
+                            <option>All</option>
+                        </select>
+                    </div>
+                    <div class="searchBox"><input type="text" placeholder="Search Amazon.in"></div>
+                    <div class="searchIcon">
+
+                    </div>
+                </div>
+                <div class="menuDiv langBox">
+                    <select>
+                        <option>EN</option>
+                    </select>
+                </div>
+                <div class="menuDiv">
+                    <!-- <div class="mapico fl"><i class="fa fa-2x fa-map-marker"></i></div> -->
+                    <div class="selectAddrBox">
+                        <small>Hello, sign in</small><br>
+                        <h4>Accounts & Lists</h4>
+                    </div>
+                </div>
+                <div class="menuDiv">
+                    <small>Returns</small>
+                    <h4>& Orders</h4>
+                </div>
+                <div class="menuDiv">
+                    <i class="fa fa-shopping-cart fa-3x"></i><span>Cart</span>
+                </div>
             </div>
-            <div class="menubar"></div>
+            <div class="menubar">
+                <ul>
+                    <li>All</li>
+                    <li>Amazon miniTV</li>
+                    <li>Sell</li>
+                    <li>Best Sellers</li>
+                    <li>Mobiles</li>
+                    <li>Today's Deals</li>
+                    <li>Customer Service</li>
+                    <li>New Releases</li>
+                    <li>Electronics</li>
+                    <li>Prime &#8964;</li>
+                </ul>
+            </div>
         </nav>
         <section class="main">
             main
